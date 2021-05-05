@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <html lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="Viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="refresh"/>
+        <link rel="stylesheet" href="index.css">
+        <link rel="shortcut icon" href="che.png">
+        <link rel="shortcut icon" href="">
+        <title>Scratch</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Scrattch
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+        <p id="q">¿Que es Scrattch?</p>
+        <p id="con">Con Scrattch puedes calcular la edad real de tu muerte. </p>
+        <p id="ta">¡DIVIERTE CON T PONIENDO LAS FECHAS DE PERSONAJES FAMOSOS Y COMPRUEBA LA VERACIDAD!</p>
+        <p id="q">¿No confias en Scrattch?</p>
+        <p id="ta">Si es asi, permiteme esclarecer tus pensamientos con Edgar A. Poe</p>
+        <p id="tap">Poe nacio el 19 de Enero de 1809, inserta estos datos en Scrattch y te dara como resultado el numero 11 que 
+            corresponde a las edades de 42, 47, 75 y 86 años, Poe murio a la edad de 42 años. </p>
+        <p id="dsa"></p>
+        
+    </div>
+    <hr>
+    <p id="cal">Calcula la edad de tu muerte</p>
+    <form action="" id="Calcular" name="" method="GET" >
+    
+        <label >Ingresa tu dia de nacimiento (primer digito):</label>  
+        <br>
+        <input type="number" id="valor1" maxlength="1" autofocus placeholder="Escribir" max="9" min="1" class="placeholder" required onkeydown="if(this.value.length == 1) return false;"> 
+        <br>
+        <br>
+
+        <label>Ingresa tu dia de nacimiento (segundo digito):</label>  
+        <br>
+        <input type="number" id="valor2" min="1" max="9" autofocus placeholder="Escribir" class="placeholder" onkeydown="if(this.value.length == 1) return false;" required>  
+        <br>
+        <br>
+        <label>Ingresa tu mes de nacimiento:</label>  
+        <br>
+        <input type="number" id="valor3" max="9" autofocus placeholder="Escribir" class="placeholder" onkeydown="if(this.value.length == 1) return false;" required>   
+        <br>
+        <br>
+        <label>Ingresa tu año de nacimiento (primer digito):</label>  
+        <br>
+        <input type="number" id="valor4" max="9" autofocus placeholder="Escribir" class="placeholder" onkeydown="if(this.value.length == 1) return false;" required>  
+        <br>
+        <br>
+        <label>Ingresa tu año de nacimiento (segundo digito):</label> 
+        <br>
+        <input type="number" id="valor5" max="9" autofocus placeholder="Escribir" class="placeholder" onkeydown="if(this.value.length == 1) return false;" required>  
+        <br>
+        <br>
+        <label>Ingresa tu año de nacimiento (tercer digito):</label>  
+        <br>
+        <input type="number" id="valor6" max="9" autofocus placeholder="Escribir" class="placeholder" onkeydown="if(this.value.length == 1) return false;" required>  
+        <br>
+        <br>
+        <label>Ingresa tu año de nacimiento (cuarto digito):</label>  
+        <br>
+        <input type="number" id="valor7" max="9" autofocus placeholder="Escribir" class="placeholder" onkeydown="if(this.value.length == 1) return false;" required>  
+        <br>
+        <br>
+        <button type="button" onclick="sumar1();" class="btn1">Calcular</button>
+        <button type="button"  onclick="limpiar();" class="btn2">Limpiar campos</button> 
+        <br>
+        <p> Preresultado: <span id="preresultado"></span></p>
+        <br> 
+        <label>Ingresa el primer digito</label>  
+        <br>
+        <br>
+        <input type="number" id="valor8" max="9" autofocus placeholder="Escribir" class="placeholder" onkeydown="if(this.value.length == 1) return false;"required>
+        <br>
+        <label>Ingresa el segundo digito</label>  
+        <br>
+        <br>
+        <input type="number" id="valor9" max="9" autofocus placeholder="Escribir" class="placeholder" onkeydown="if(this.value.length == 1) return false;"required>
+        <br>
+        <button type="button" onclick="sumar2();" onclick="sip();" class="btn1">Calcular</button>
+        <p> Tu numero es el: <span id="resultado"></span></p>
+        <p id="ta">Tabla de edades</p>
+        <img class="img" src="tablacap.png">
+    </form>
+    
+    <script type="text/javascript" src="functions.js">
+    </script>
+    <hr>
+    <div id="pre">
+        <p id="just">JUST ENJOY!</id>
+        <p id="just">By: SILEOF</p>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; Scrattch - Todos los derechos reservados - 2021</p>
+    </footer>
+</body>
+</html>
